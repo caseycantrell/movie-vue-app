@@ -7,7 +7,12 @@
       |
       <router-link to="/movies">All Movies</router-link>
       |
-      <!-- <router-link to="/movies/new/">New Movie</router-link> -->
+      <router-link to="/movies/new/">New Movie</router-link>
+      |
+      <router-link to="/actors">All Actors</router-link>
+      |
+      <router-link to="/actors/new/">New Actor</router-link>
+      |
       <router-link to="/signup">Sign Up</router-link>
       |
       <router-link to="/login">Login</router-link>
