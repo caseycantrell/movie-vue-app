@@ -28,9 +28,9 @@
         </form>
       </div>
       <br />
-      <input type="submit" value="Create" />
+      <input class="btn btn-primary mb-3" type="submit" value="Create" />
       &nbsp;
-      <input type="reset" value="Reset" />
+      <input class="btn btn-secondary mb-3" type="reset" value="Reset" />
     </form>
   </div>
 </template>
