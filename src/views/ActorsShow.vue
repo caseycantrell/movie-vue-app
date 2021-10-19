@@ -6,7 +6,7 @@
     <router-link :to="`/actors/${actor.id}/edit`">Edit</router-link>
     <br />
     <br />
-    <button v-on:click="destroyActor()">Delete</button>
+    <button class="btn btn-danger btn-lg" v-on:click="destroyActor()">Delete</button>
     <br />
   </div>
 </template>
