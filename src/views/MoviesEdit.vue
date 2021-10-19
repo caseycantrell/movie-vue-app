@@ -6,22 +6,22 @@
         <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
       </ul>
       <div>
-        <label>Title:</label>
+        <label>Title:&nbsp;</label>
         <input type="text" v-model="editMovieParams.title" />
       </div>
       <div>
-        <label>Year:</label>
+        <label>Year:&nbsp;</label>
         <input type="text" v-model="editMovieParams.year" />
       </div>
       <div>
-        <label>Plot:</label>
+        <label>Plot:&nbsp;</label>
         <input type="text" v-model="editMovieParams.plot" />
       </div>
       <div>
-        <label>Director:</label>
+        <label>Director:&nbsp;</label>
         <input type="text" v-model="editMovieParams.director" />
       </div>
-
+      <br />
       <input type="submit" value="Update That Thang" />
     </form>
   </div>

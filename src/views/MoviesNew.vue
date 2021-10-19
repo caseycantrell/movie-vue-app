@@ -6,20 +6,22 @@
         <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
       </ul>
       <div>
-        <label>Title:</label>
+        <label>Title:&nbsp;</label>
         <input type="text" v-model="newMovieParams.title" />
       </div>
+      <br />
       <div>
-        <label>Year:</label>
+        <label>Year:&nbsp;</label>
         <input type="text" v-model="newMovieParams.year" />
       </div>
+      <br />
       <div>
-        <label>Plot:</label>
+        <label>Plot:&nbsp;</label>
         <input type="text" v-model="newMovieParams.plot" />
       </div>
+      <br />
       <input type="submit" value="Create" />
     </form>
-    newMovieParams: {{ newMovieParams }}
   </div>
 </template>
 
@@ -39,6 +41,7 @@ export default {
         .then((response) => {
           console.log(response.data);
           this.$router.push("/movies");
+          window.alert("New movie successfully created!");
         })
         .catch((error) => {
           this.errors = error.response.data.errors;
