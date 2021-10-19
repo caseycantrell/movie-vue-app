@@ -1,26 +1,36 @@
 <template>
   <div class="movies-new">
+    <img src="https://i.kym-cdn.com/photos/images/newsfeed/000/673/870/899.gif" />
     <form v-on:submit.prevent="createMovie()">
-      <h1>New Movie</h1>
+      <label for="New Movie"><h1>New Movie</h1></label>
       <ul>
         <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
       </ul>
       <div>
-        <label>Title:&nbsp;</label>
+        <label for="Title">Title:&nbsp;</label>
         <input type="text" v-model="newMovieParams.title" />
       </div>
       <br />
       <div>
-        <label>Year:&nbsp;</label>
+        <label for="Year">Year:&nbsp;</label>
         <input type="text" v-model="newMovieParams.year" />
       </div>
       <br />
       <div>
-        <label>Plot:&nbsp;</label>
+        <label for="Plot">Plot:&nbsp;</label>
         <input type="text" v-model="newMovieParams.plot" />
+      </div>
+      <div>
+        <br />
+        <form action="/action_page.php">
+          <label for="favcolor">What's your favorite color, dude?&nbsp;</label>
+          <input type="color" id="favcolor" name="favcolor" value="#ff0000" />
+        </form>
       </div>
       <br />
       <input type="submit" value="Create" />
+      &nbsp;
+      <input type="reset" value="Reset" />
     </form>
   </div>
 </template>

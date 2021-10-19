@@ -1,5 +1,6 @@
 <template>
   <div class="movies-index">
+    <img src="https://c.tenor.com/OxIKfikF9IsAAAAM/s%C3%B3observo-watchin-movie.gif" />
     <h1 class="animate__animated animate__lightSpeedInRight animate__slower">All Movies</h1>
     Search by title:
     <input v-model="titleFilter" list="titles" />
