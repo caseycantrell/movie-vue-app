@@ -26,7 +26,7 @@
               <router-link class="nav-link" to="/actors">All Actors</router-link>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link" to="/actors">New Actor</router-link>
+              <router-link class="nav-link" to="/actors/new">New Actor</router-link>
             </li>
             <li v-if="!isLoggedIn()" class="nav-item">
               <router-link class="nav-link" to="/signup">Signup</router-link>

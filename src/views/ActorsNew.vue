@@ -22,7 +22,7 @@
         <input type="text" v-model="newActorParams.known_for" />
       </div>
       <br />
-      <input type="submit" value="Create Actor" />
+      <input class="btn btn-info mb-3" type="submit" value="Create Actor" />
     </form>
   </div>
 </template>
