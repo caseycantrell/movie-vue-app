@@ -8,7 +8,7 @@
     <router-link :to="`/movies/${movie.id}/edit`">Edit</router-link>
     <br />
     <br />
-    <button v-on:click="destroyMovie()">Delete</button>
+    <button class="btn btn-danger btn-lg" v-on:click="destroyMovie()">Delete</button>
     <br />
   </div>
 </template>

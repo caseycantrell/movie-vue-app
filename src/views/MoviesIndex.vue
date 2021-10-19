@@ -13,9 +13,9 @@
       <option v-for="movie in movies" v-bind:key="movie.id">{{ movie.title }}</option>
     </datalist>
 
-    <button v-on:click="sortAttribute = 'title'">Sort Alphabetically</button>
+    <button class="btn btn-primary btn-lg" v-on:click="sortAttribute = 'title'">Sort Alphabetically</button>
     &nbsp;
-    <button v-on:click="sortAttribute = 'year'">Sort By Year</button>
+    <button class="btn btn-success btn-lg" v-on:click="sortAttribute = 'year'">Sort By Year</button>
     <br />
     <br />
     <div class="container">
@@ -34,7 +34,7 @@
             <div class="card-body">
               <h5 class="card-title">{{ movie.title }}</h5>
               <p class="card-text">Plot: {{ movie.plot }}</p>
-              <router-link class="btn btn-primary" :to="`/movies/${movie.id}`">More Details</router-link>
+              <router-link class="btn btn-info" :to="`/movies/${movie.id}`">More Details</router-link>
             </div>
           </div>
         </div>
